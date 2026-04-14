@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACHI EXPRESS</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #00ff88; --bg: #0f172a; }
+        body { font-family: sans-serif; background: var(--bg); color: white; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .app { width: 350px; background: rgba(255,255,255,0.05); border-radius: 30px; padding: 25px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+        .logo-img { width: 180px; margin-bottom: 20px; }
+        .user-card { background: rgba(255,255,255,0.08); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
+        .user-name { font-size: 1.2rem; font-weight: bold; margin: 0; }
+        .user-info { color: var(--primary); font-size: 0.8rem; margin: 5px 0; }
+        .btn { width: 100%; padding: 15px; border-radius: 15px; border: none; font-weight: bold; cursor: pointer; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .btn-in { background: var(--primary); color: #000; }
+        .btn-out { background: #ff4d4d; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <img src="https://i.imgur.com/yv9EwL6.png" class="logo-img" alt="Logo">
+        
+        <div class="user-card">
+            <p class="user-name">Kitajima Morio</p>
+            <p class="user-info">Konishi Sangyo | ID: 00107</p>
+            <p style="font-size: 0.7rem; opacity: 0.6;">Unidade: Sumitomo</p>
+        </div>
+
+        <button class="btn btn-in"><i data-lucide="play"></i> ENTRADA (SHUKKIN)</button>
+        <button class="btn btn-out"><i data-lucide="square"></i> SAÍDA (TAIKIN)</button>
+        
+        <p style="font-size: 0.6rem; opacity: 0.4; margin-top: 20px;">LOCALIZAÇÃO VALIDADA: SUMITOMO FACTORY</p>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
